@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handiest", "Handiest\Handiest.csproj", "{127E9D55-1C64-467E-AFCA-F517BE4837D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug-Quest|Any CPU = Debug-Quest|Any CPU
+		Debug-Win|Any CPU = Debug-Win|Any CPU
+		Release-Quest|Any CPU = Release-Quest|Any CPU
+		Release-Win|Any CPU = Release-Win|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Debug-Quest|Any CPU.ActiveCfg = Debug-Quest|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Debug-Quest|Any CPU.Build.0 = Debug-Quest|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Debug-Win|Any CPU.ActiveCfg = Debug|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Debug-Win|Any CPU.Build.0 = Debug|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Release-Quest|Any CPU.ActiveCfg = Release-Quest|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Release-Quest|Any CPU.Build.0 = Release-Quest|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Release-Win|Any CPU.ActiveCfg = Release|Any CPU
+		{127E9D55-1C64-467E-AFCA-F517BE4837D0}.Release-Win|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA726FDF-E80B-470C-9408-BBB882651111}
+	EndGlobalSection
+EndGlobal
