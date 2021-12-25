@@ -149,8 +149,10 @@ namespace Handiest {
 #if ANDROID
 			string path = $"/storage/emulated/0/Android/data/swearl-llc-play-a-video-player/files/UserData/handiest.json";
 #else
-			string path = Path.Combine(MyMod.__instance.cfg.ScriptsPath, "handiest.json");
+			string path = Path.Combine(".", "handiest.json");
 #endif
+
+			LoggerInstance.Msg($"Config path: {path}");
 
 			if (File.Exists(path)) {
 				this.cfg = new ModConfig();
@@ -171,7 +173,7 @@ namespace Handiest {
 			}
 
 			this.IHandy = new theHandy(cfg.HandyKey);
-			WebServer.Start(); //TODO: Stop it again
+			WebServer.Start();
 
 			this.Msg("Loaded!");
 		}
