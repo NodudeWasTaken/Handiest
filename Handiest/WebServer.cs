@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -30,6 +31,22 @@ namespace Handiest {
 		public static Uri AddFile(string name, string data) {
 			if (!dFiles.ContainsKey(name)) {
 				dFiles.Add(name, data);
+			}
+			return new Uri($"{lanUrl}{name}");
+		}
+		public static Uri AddFile(string name, Uri url) {
+			if (!dFiles.ContainsKey(name)) {
+				HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+
+				string script = string.Empty;
+				using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+				using (Stream stream = response.GetResponseStream())
+				using (StreamReader reader = new StreamReader(stream)) {
+					script = reader.ReadToEnd();
+				}
+
+				name = name.Replace(".funscript", ".csv");
+				dFiles.Add(name, Tools.FunscriptToCsv(script));
 			}
 			return new Uri($"{lanUrl}{name}");
 		}
@@ -69,7 +86,7 @@ namespace Handiest {
 			listener.Stop();
 		}
 		public static void Main(string[] args) {
-			dFiles.Add("memes.txt", "{\"funny\": \"data\"}");
+			//dFiles.Add("memes.txt", "{\"funny\": \"data\"}");
 
 			Start();
 			Console.WriteLine("wait");

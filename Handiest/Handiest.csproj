@@ -69,6 +69,7 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>E:\Oculus Apps\Software\swearl-llc-play-a-video-player\PlayaVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\Oculus Apps\Software\swearl-llc-play-a-video-player\PlayaVR_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
